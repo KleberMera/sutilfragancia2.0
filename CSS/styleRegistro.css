@@ -1,0 +1,88 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+}
+
+.register-container {
+  background-color: #f7f7f7;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+h2 {
+  color: #8d2ecc;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #090808;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #8d2ecc;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+/* Estilos para el botón de regreso */
+.back-to-index {
+  position: fixed;
+  top: 5px;
+  right: 7%; /* Cambiado a un valor relativo */
+  background-color: #8d2ecc;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-index:hover {
+  background-color: #000000;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 767px) {
+  .register-container {
+    padding: 30px;
+  }
+
+  .back-to-index {
+    right: 5%;
+  }
+}

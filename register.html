@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styleRegistro.css" />
+    <title>Sutil Fragancia - Registro</title>
+  </head>
+  <body background="IMG//fondoderegistro.webp">
+    
+    <div class="register-container">
+        
+      <h2>Registrarse</h2>
+      <button class="back-to-index" onclick="window.location.href='index.html'">Volver al Inicio</button>
+
+      <form id="registerForm">
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required />
+
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required />
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required />
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input
+          type="date"
+          id="fechaNacimiento"
+          name="fechaNacimiento"
+          required
+        />
+
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select id="nacionalidad" name="nacionalidad">
+          <option value="ecuador" selected>Ecuador</option>
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required />
+
+        <label for="newUsername">Nuevo Usuario:</label>
+        <input type="text" id="newUsername" name="newUsername" required />
+
+        <label for="newPassword">Nueva Contraseña:</label>
+        <input type="password" id="newPassword" name="newPassword" required />
+
+        <button type="button" onclick="registerUser()">Registrarse</button>
+        <button type="button" onclick="clearUserData()">Borrar Datos</button>
+      </form>
+      <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="JS//scriptLogin.js"></script>
+  </body>
+</html>

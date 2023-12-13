@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Sutil Fragancia</title>
+</head>
+
+<body>
+  <header class="text-white p-3">
+    <div class="container">
+      <h1>Home Page - Sutil Fragancia</h1>
+      <p>Descubre la esencia de la elegancia con nuestras fragancias cautivadoras.</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-dark">
+      <div class="container cont1">
+        <a class="navbar-brand me-2" href="#">
+          <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="30" alt="MDB Logo"
+            loading="lazy" />
+        </a>
+        <button class="navbar-toggler-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <button class="btn btn-dark px-3 me-2" onclick="irAIniciarSesion()">Iniciar Sesión</button>
+            <button class="btn btn-dark" onclick="irACrearCuenta()">Crear Cuenta</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+
+  <div id="imagenContainer" class="text-center mt-4">
+    <img src="IMG//1_image_of_womens_perfume.jpg" alt="Imagen 1" id="imagen" class="img-fluid rounded"
+      style="width: 100%;">
+  </div>
+
+  <section id="colecciones" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Explora Nuestra Colección Exclusiva</h2>
+      <div class="fragancia card p-4">
+        <h3>Encanto Floral</h3>
+        <p>Sumérgete en la frescura de las flores primaverales con nuestra colección floral.</p>
+      </div>
+      <!-- Repetir estructura similar para otras colecciones -->
+    </div>
+  </section>
+
+  <section id="porque-sutil" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Por Qué Elegir Sutil Fragancia</h2>
+      <div class="fragancia card p-4">
+        <ul class="list-unstyled text-center">
+          <li>Calidad Inigualable</li>
+          <li>Duración Duradera</li>
+          <li>Envases Sofisticados</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ofertas" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Ofertas Exclusivas para Ti</h2>
+      <div class="fragancia card p-4">
+        <p class="text-center">Suscríbete a nuestro boletín para recibir actualizaciones sobre nuevos lanzamientos y
+          promociones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contacto y Compra</h2>
+      <div class="fragancia card p-4">
+        <p class="text-center">¿Listo para experimentar la sutil elegancia? Encuentra tu fragancia perfecta hoy.</p>
+        <p class="text-center">Contáctanos en [correo electrónico] o sigue nuestras redes sociales para estar al tanto
+          de las últimas novedades.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white p-3 text-center">
+    <p>¡Sutil Fragancia - Donde la elegancia se encuentra con el aroma perfecto!</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+
+</html>

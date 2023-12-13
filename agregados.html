@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enlace a Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/styleAgregados.css" />
+    <!-- Agrega esto en la sección head de tu HTML -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">Sutil Fragancia - Agregados</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="agregados.html">Agregados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item" id="login-status">Cerrar Sesión</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="user-info mt-3">
+        <div class="container">
+          <div class="user-info-container">
+            <h3>Datos del Usuario</h3>
+            <p><strong>Cédula:</strong> <span id="cedulaUsuario"></span></p>
+            <p><strong>Nombres:</strong> <span id="nombresUsuario"></span></p>
+            <p>
+              <strong>Apellidos:</strong> <span id="apellidosUsuario"></span>
+            </p>
+            <p><strong>Ciudad:</strong> <span id="ciudadUsuario"></span></p>
+            <!-- Agrega más detalles del usuario según sea necesario -->
+          </div>
+        </div>
+      </section>
+
+      <section class="productos-agregados">
+        <!-- Aquí mostrarás los productos agregados y sus detalles -->
+      </section>
+
+      <section class="total">
+        <!-- Aquí mostrarás el total de todos los productos -->
+      </section>
+
+      <!-- Después de la sección de "total" -->
+      <section class="procesar-pago">
+        <button id="procesar-pago-btn" class="btn-procesar-pago">
+          Procesar Pago
+        </button>
+      </section>
+
+      <div id="modalProcesarPago" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Selecciona el método de pago:</p>
+          <button id="pagoEfectivoBtn" class="btn-modal">
+            Pago en Efectivo
+          </button>
+          <button id="pagoTransferenciaBtn" class="btn-modal">
+            Pago por Transferencia
+          </button>
+
+          <!-- Agregamos el contenedor para mostrar el total -->
+          <div id="totalContainer" style="display: none">
+            <p>Total a Pagar: $<span id="totalAmount"></span></p>
+          </div>
+
+          <!-- Agregamos el campo para ingresar datos de la tarjeta -->
+          <div id="tarjetaContainer" style="display: none">
+            <label for="numTarjeta">Número de Tarjeta:</label>
+            <input
+              type="text"
+              id="numTarjeta"
+              placeholder="Ingrese el número de tarjeta"
+            />
+          </div>
+
+          <!-- Botón para confirmar el pago -->
+          <button id="confirmarPagoBtn" class="btn-modal" style="display: none">
+            Confirmar Pago
+          </button>
+        </div>
+      </div>
+
+      <!-- Sección para pago en efectivo -->
+      <!-- Sección para pago en efectivo -->
+      <section class="pago-efectivo" style="display: none">
+        <h3>Pago en Efectivo</h3>
+        <p>Ingrese el monto en efectivo:</p>
+        <input type="text" id="montoEfectivo" placeholder="Monto en efectivo" />
+        <button id="confirmarPagoEfectivoBtn" class="btn-modal">
+          Confirmar Pago en Efectivo
+        </button>
+      </section>
+
+      <!-- Sección para mostrar el recibo -->
+      <section class="recibo" style="display: none">
+        <h2>Sutil Fragancias</h2>
+        <p>Pago Realizado</p>
+        <p id="fechaHora"></p>
+        <p id="cliente"></p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Productos</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody id="detalleProductos"></tbody>
+        </table>
+
+        <p id="totalRecibo"></p>
+
+        <button id="imprimirReciboBtn" class="btn-modal">
+          Imprimir Recibo
+        </button>
+        <button id="aceptarReciboBtn" class="btn-modal">Aceptar</button>
+      </section>
+
+      <section class="recibo" style="display: none">
+        <h2>Sutil Fragancias</h2>
+        <p>Pago Realizado</p>
+        <p id="fechaHora"></p>
+        <p id="cliente"></p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Productos</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody id="detalleProductos"></tbody>
+        </table>
+
+        <p id="totalRecibo"></p>
+
+        <button id="imprimirReciboBtn" class="btn-modal">
+          Imprimir Recibo
+        </button>
+        <button id="aceptarReciboBtn" class="btn-modal">Aceptar</button>
+      </section>
+
+      <footer class="fixed-bottom bg-dark text-white text-center p-2">
+        <p>&copy; 2023 Sutil Fragancia. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+
+    <!-- Scripts de Bootstrap y scriptAgregados.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+      integrity="sha384-Mr12i9zBC7DBWe2qjNUU8ePPFYBNTf1TVqACvohsVHwnf2FaE3UHOMbYAhA1w"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6pBvXpKpL4rL2nE6h0q2BxaujAFA8N2M"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/scriptAgregados.js"></script>
+    <script src="JS/scriptEfectivo.js"></script>
+  </body>
+</html>

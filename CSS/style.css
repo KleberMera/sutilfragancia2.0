@@ -1,0 +1,48 @@
+/* Resto de los estilos permanecen igual */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    background-color: #000000;
+}
+
+.btn:hover {
+  background-color: #800080;
+}
+
+.container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* Agrega bordes redondeados */
+  margin-bottom: 20px; /* Añade un espacio entre secciones */
+  transition: background-color 0.3s ease-in-out;
+  margin: 0 auto; /*
+  
+  Centra horizontalmente */
+}
+
+.cont1 {
+  background-color: #000;
+}
+
+
+
+.container:hover {
+  background-color: #800080;
+}
+
+.cont1:hover {
+  background-color: #000;
+}
+
+.fragancia:hover {
+  background-color: #000000;
+  color: #fff;
+}
+

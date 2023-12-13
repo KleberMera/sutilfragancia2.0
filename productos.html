@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styleProductos.css" />
+    <title>Sutil Fragancia - Productos</title>
+  </head>
+  <body>
+    <div id="header-container">
+      <header>
+        <h1>Bienvenido a Sutil Fragancia</h1>
+        <nav>
+          <ul>
+            <li><a href="agregados.html">Agregados</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li id="login-status">Cerrar Sesión</li>
+            <!-- Otros elementos del menú -->
+          </ul>
+        </nav>
+        
+      </header>
+    </div>
+
+    <section class="productos">
+      <article class="producto" id="producto-1">
+        <!-- Información específica del producto -->
+        <img src="IMG//floral.webp" alt="Perfume 1" />
+        <h2>Perfume Floral Elegante</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Elegante fragancia floral que combina notas de flores delicadas para
+            una experiencia refinada y sofisticada.</span
+          >
+        </p>
+        <p class="precio">$25.00</p>
+        <p class="disponibilidad">Disponibles: <span>15</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+
+        <button class="agregar-carrito-btn" data-producto-id="producto-1">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-2">
+        <!-- Información específica del producto -->
+        <img src="IMG//fresco.webp" alt="Perfume 2" />
+        <h2>Perfume Fresco de Verano</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Fragancia floral fresca ideal para el verano, con notas elegantes y
+            refinadas.</span
+          >
+        </p>
+        <p class="precio">$20.00</p>
+        <p class="disponibilidad">Disponibles: <span>10</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-2">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-3">
+        <!-- Información específica del producto -->
+        <img src="IMG//oriental.webp" alt="Perfume 3" />
+        <h2>Perfume Dulce Oriental</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Dulce perfume oriental con toques florales, perfecto para una
+            experiencia sofisticada.</span
+          >
+        </p>
+        <p class="precio">$15.00</p>
+        <p class="disponibilidad">Disponibles: <span>20</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-3">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-4">
+        <!-- Información específica del producto -->
+        <img src="IMG//frutal.webp" alt="Perfume 4" />
+        <h2>Perfume Frutos Piña</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume tropical con aroma a piña, fresco y deliciosamente
+            frutal.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>5</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-4">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-5">
+        <!-- Información específica del producto -->
+        <img src="IMG//floral2.webp" alt="Perfume 5" />
+        <h2>Perfume Floral Normal</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume floral clásico con notas tradicionales, para una elegancia
+            atemporal.</span
+          >
+        </p>
+        <p class="precio">$33.00</p>
+        <p class="disponibilidad">Disponibles: <span>50</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-5">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-6">
+        <!-- Información específica del producto -->
+        <img src="IMG//citricolimos.webp" alt="Perfume 6" />
+        <h2>Perfume Cítrico Limón</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume cítrico con refrescante aroma a limón, vibrante y lleno de
+            vitalidad..</span
+          >
+        </p>
+        <p class="precio">$21.00</p>
+        <p class="disponibilidad">Disponibles: <span>25</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-6">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-7">
+        <!-- Información específica del producto -->
+        <img src="IMG//citriconaranja.webp" alt="Perfume 7" />
+        <h2>Perfume Cítrico Naranja</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Fragancia cítrica con acentos de naranja, vibrante y energizante
+            para un toque fresco.</span
+          >
+        </p>
+        <p class="precio">$12.00</p>
+        <p class="disponibilidad">Disponibles: <span>10</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-7">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-8">
+        <!-- Información específica del producto -->
+        <img src="IMG//orientalvainalla.webp" alt="Perfume 8" />
+        <h2>Perfume Oriental Vainilla</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume oriental con suaves toques de vainilla, cálido y seductor
+            para una experiencia envolvente.</span
+          >
+        </p>
+        <p class="precio">$20.00</p>
+        <p class="disponibilidad">Disponibles: <span>10</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-8">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-9">
+        <!-- Información específica del producto -->
+        <img src="IMG//frutalpera.webp" alt="Perfume 9" />
+        <h2>Perfume Frutal Pera</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume frutal con notas jugosas de pera, refrescante y
+            deliciosamente afrutado.</span
+          >
+        </p>
+        <p class="precio">$5.50</p>
+        <p class="disponibilidad">Disponibles: <span>15</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-9">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-10">
+        <!-- Información específica del producto -->
+        <img src="IMG//orientalambar.webp" alt="Perfume 10" />
+        <h2>Perfume Oriental Ambar</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume oriental con cautivadoras notas de ámbar, sensual y
+            misterioso para una presencia envolvente.</span
+          >
+        </p>
+        <p class="precio">$60.00</p>
+        <p class="disponibilidad">Disponibles: <span>5</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-10">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-11">
+        <!-- Información específica del producto -->
+        <img src="IMG//chipremusgo.webp" alt="Perfume 11" />
+        <h2>Perfume Chipre Musgo</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume con notas de chipre y musgo, creando una fragancia clásica y
+            atemporal con toques terrosos y elegantes.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>7</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-11">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-12">
+        <!-- Información específica del producto -->
+        <img src="IMG//ChiprePatchouli.webp" alt="Perfume 12" />
+        <h2>Perfume Chipre Patchouli</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume con notas de chipre y patchouli, combinando elegancia con
+            una profundidad terrosa y distintiva.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>20</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-12">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-13">
+        <!-- Información específica del producto -->
+        <img src="IMG//dulceuva.webp" alt="Perfume 13" />
+        <h2>Perfume Dulce Uva</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume dulce con aromas de uva, creando una fragancia jugosa y
+            deliciosamente dulce.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>20</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-13">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-14">
+        <!-- Información específica del producto -->
+        <img src="IMG//simplefloral.webp" alt="Perfume 14" />
+        <h2>Perfume Simple Floral</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume floral simple, con notas suaves y clásicas para una
+            elegancia sutil y atemporal.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>20</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-14">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-15">
+        <!-- Información específica del producto -->
+        <img src="IMG//aromaticogirasol.webp" alt="Perfume 15" />
+        <h2>Perfume Aromatico Girasol</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume aromático con notas de girasol, radiante y fresco para una
+            experiencia floral luminosa.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>15</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-15">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-16">
+        <!-- Información específica del producto -->
+        <img src="IMG//aromaticolavanda.webp" alt="Perfume 16" />
+        <h2>Perfume Aromatico Lavanda</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume aromático con esencias de lavanda, brindando frescura y
+            tranquilidad para una experiencia relajante.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>15</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-16">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-17">
+        <!-- Información específica del producto -->
+        <img src="IMG//floralmenta.webp" alt="Perfume 17" />
+        <h2>Perfume Floral Menta</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume floral con toques refrescantes de menta, creando una
+            fragancia única y vivaz.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>15</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-17">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-18">
+        <!-- Información específica del producto -->
+        <img src="IMG//aromaticanela.webp" alt="Perfume 18" />
+        <h2>Perfume Aromatico Canela</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume aromático con notas cálidas de canela, ofreciendo una
+            fragancia envolvente y especiada.</span
+          >
+        </p>
+        <p class="precio">$10.00</p>
+        <p class="disponibilidad">Disponibles: <span>15</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-18">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <article class="producto" id="producto-19">
+        <!-- Información específica del producto -->
+        <img src="IMG//frescomenta.webp" alt="Perfume 19" />
+        <h2>Perfume Fresco Menta</h2>
+        <p class="descripcion">
+          Descripción:
+          <span class="contenido-completo">
+            Perfume fresco con refrescantes notas de menta, brindando una
+            experiencia aromática vigorizante y estimulante.</span
+          >
+        </p>
+        <p class="precio">$8.00</p>
+        <p class="disponibilidad">Disponibles: <span>12</span></p>
+        <!-- Agregar la sección de precio -->
+        <div class="cantidad-container">
+          <button class="cantidad-btn menos">-</button>
+          <span class="cantidad">0</span>
+          <button class="cantidad-btn mas">+</button>
+        </div>
+        <button class="agregar-carrito-btn" data-producto-id="producto-19">
+          Agregar al Carrito
+        </button>
+        <button class="agregar-carrito-btn agregado-btn" style="display: none">
+          Agregado
+        </button>
+      </article>
+
+      <!-- Puedes agregar más artículos según sea necesario -->
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Sutil Fragancia. Todos los derechos reservados.</p>
+    </footer>
+    <script src="JS/scriptProductos.js"></script>
+  </body>
+</html>
