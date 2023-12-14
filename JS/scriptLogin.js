@@ -101,15 +101,3 @@ function clearUserData() {
   }
 }
 
-document.getElementById("login-status").addEventListener("click", function () {
-  var confirmation = confirm("¿Estás seguro de que deseas cerrar sesión?");
-
-  if (confirmation) {
-    // Restablecer el estado del menú en productos
-    document.getElementById("login-status").innerHTML = "Inicio de Sesión";
-    // Puedes agregar más lógica aquí, como limpiar las variables de sesión
-    alert("Sesión cerrada exitosamente.");
-    // Redirigir al índice u otra página
-    window.location.href = "index.html";
-  }
-});

@@ -1,56 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styleRegistro.css" />
-    <title>Sutil Fragancia - Registro</title>
-  </head>
-  <body background="IMG//fondoderegistro.webp">
-    
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyL/Jmkwo1F21VOC4Rkehjwind4LXWWGg4" crossorigin="anonymous">
+  <link rel="icon" href="IMG//Logo.jpeg" type="image/png">
+  <link rel="stylesheet" href="CSS/styleRegistro.css" />
+  <title>Sutil Fragancia - Registro</title>
+</head>
+
+<body>
+  <div class="new">
+    <nav>
+      <ul>
+        <li>
+          <h2 class="mb-4">Registrarse</h2>
+        </li>
+        <li>
+          <button class="btn btn-secondary ml-auto" onclick="window.location.href='index.html'">Volver al
+            Inicio</button>
+
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="container mt-5">
     <div class="register-container">
-        
-      <h2>Registrarse</h2>
-      <button class="back-to-index" onclick="window.location.href='index.html'">Volver al Inicio</button>
+
 
       <form id="registerForm">
-        <label for="cedula">Cédula:</label>
-        <input type="text" id="cedula" name="cedula" required />
+        <div class="form-group">
+          <label for="cedula">Cédula:</label>
+          <input type="text" class="form-control" id="cedula" name="cedula" required />
+        </div>
 
-        <label for="nombres">Nombres:</label>
-        <input type="text" id="nombres" name="nombres" required />
+        <div class="form-group">
+          <label for="nombres">Nombres:</label>
+          <input type="text" class="form-control" id="nombres" name="nombres" required />
+        </div>
 
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required />
+        <div class="form-group">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" class="form-control" id="apellidos" name="apellidos" required />
+        </div>
 
-        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-        <input
-          type="date"
-          id="fechaNacimiento"
-          name="fechaNacimiento"
-          required
-        />
+        <div class="form-group">
+          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+          <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required />
+        </div>
 
-        <label for="nacionalidad">Nacionalidad:</label>
-        <select id="nacionalidad" name="nacionalidad">
-          <option value="ecuador" selected>Ecuador</option>
-          <!-- Agrega más opciones según sea necesario -->
-        </select>
+        <div class="form-group">
+          <label for="nacionalidad">Nacionalidad:</label>
+          <select class="form-control" id="nacionalidad" name="nacionalidad">
+            <option value="ecuador" selected>Ecuador</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
 
-        <label for="ciudad">Ciudad:</label>
-        <input type="text" id="ciudad" name="ciudad" required />
+        <div class="form-group">
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" class="form-control" id="ciudad" name="ciudad" required />
+        </div>
 
-        <label for="newUsername">Nuevo Usuario:</label>
-        <input type="text" id="newUsername" name="newUsername" required />
+        <div class="form-group">
+          <label for="newUsername">Nuevo Usuario:</label>
+          <input type="text" class="form-control" id="newUsername" name="newUsername" required />
+        </div>
 
-        <label for="newPassword">Nueva Contraseña:</label>
-        <input type="password" id="newPassword" name="newPassword" required />
+        <div class="form-group">
+          <label for="newPassword">Nueva Contraseña:</label>
+          <input type="password" class="form-control" id="newPassword" name="newPassword" required />
+        </div>
 
-        <button type="button" onclick="registerUser()">Registrarse</button>
-        <button type="button" onclick="clearUserData()">Borrar Datos</button>
+        <button type="button" class="btn btn-primary" onclick="registerUser()">Registrarse</button>
+        <button type="button" class="btn btn-danger" onclick="clearUserData()">Borrar Datos</button>
       </form>
-      <p id="error-message" class="error-message"></p>
+
+      <p id="error-message" class="error-message mt-3"></p>
     </div>
-    <script src="JS//scriptLogin.js"></script>
-  </body>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyL/Jmkwo1F21VOC4Rkehjwind4LXWWGg4"
+    crossorigin="anonymous"></script>
+  <script src="JS/scriptLogin.js"></script>
+</body>
+
 </html>

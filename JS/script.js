@@ -2,10 +2,10 @@
 
 // Lista de rutas de imágenes
 const imagenes = [
-    "IMG//2_image_of_womens_perfume.jpg",
-    "IMG//3_image_of_womens_perfume.jpg",
-    "IMG//4_image_of_womens_perfume.jpg",
-    "IMG//5_image_of_womens_perfume.jpg"
+    "IMG//homepage2.webp",
+    "IMG//homepage3.webp",
+    "IMG//homepage4.webp",
+    "IMG//homepage5.webp"
   ];
   
   // Índice de la imagen actual
