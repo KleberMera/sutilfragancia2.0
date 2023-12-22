@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #262626, #000000);
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(139, 49, 124, 0.2);
+}
+
+h1 {
+    color: #802377;
+    background: linear-gradient(45deg, #1a1a1a, #333333);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+h1:hover {
+    color: #062525;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background-color: #333333;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+    background-color: #1a1a1a;
+}
+
+tr:hover {
+    background-color: #1f1f1f;
+}
+
+.social-icons {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-icons a i {
+    font-size: 36px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a i:hover {
+    transform: scale(1.2);
+}
+
+.profile {
+    float: left;
+    margin-right: 20px;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}

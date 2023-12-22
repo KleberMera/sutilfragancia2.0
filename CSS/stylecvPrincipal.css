@@ -1,0 +1,97 @@
+body {
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 20px;
+    
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 250px; /* Puedes ajustar este valor según tus necesidades */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row; /* Cambiado a fila */
+}
+
+
+
+.containeHeader {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+
+.bg-light {
+    background-color: #fff;
+}
+
+.btn-dark {
+    background-color: #800080;
+    color: #fff;
+    border: 1px solid #800080;
+}
+
+
+
+.container:hover{
+    background-color: #800080;
+    .btn-dark {
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid #800080;
+    }
+    
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    margin-top: auto;
+    font-size: 20px;
+}
+
+.integrante-container {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+    text-align: center;
+}
+.integrante-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrante-name {
+    margin-bottom: 10px;
+}
+
+.integrante-image {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    object-fit: cover;
+    border-radius: 50%;
+}

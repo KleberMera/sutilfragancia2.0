@@ -179,20 +179,18 @@ article.producto .agregado-btn {
 }
 
 .modal-content {
-  background-color: #800080;
-  /* Color principal del modal */
-  color: #fff;
-  /* Texto en blanco para contrastar */
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #fff;
-  /* Borde blanco */
-  width: 80%;
-  overflow-y: auto;
-  /* Agrega scroll si el contenido es demasiado largo */
-  border-radius: 10px;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  /* Borde color morado */
+  border-radius: 20px;
   /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10% auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 400px;
+  /* Ancho máximo para evitar que sea demasiado ancho en pantallas grandes */
+  position: relative;
+  color: #f2f2f2;
   /* Sombra suave */
 }
 

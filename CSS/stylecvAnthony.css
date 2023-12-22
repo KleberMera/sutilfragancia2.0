@@ -1,0 +1,142 @@
+/* Selector Universal */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Selectores de etiquetas */
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+   
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+table, th, td {
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 110%;
+    height: 10%;
+    color: #ffffff;
+}
+
+h1, h2, #carrera {
+    color: #800080; /* Púrpura */
+    margin-bottom: -10px;
+}
+
+/* Clases */
+.izquierda {
+    background-color: #292728;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 20%;
+}
+
+.DatosPersonales {
+    margin-left: 30px;
+    width: 80%;
+
+    color: #ffffff;
+}
+
+.fila {
+    display: flex;
+    width: 80%;
+}
+
+/* Tabla de habilidades */
+table {
+    width: 100%;
+}
+
+.subcolumna {
+    margin-right: 3.5%;
+    color: #fff;
+}
+
+.perfil {
+    width: 92%;
+    margin-top: 9%;
+}
+
+.icono {
+    color: #800080; /* Púrpura */
+    width: 20px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 15%;
+}
+
+.progress {
+    width: 80%;
+    height: 100%;
+    border-radius: 15%;
+    background-color: #800080; /* Púrpura */
+}
+
+/* id's */
+#apellidos {
+    color: #800080;
+}
+
+#invisible {
+    color: transparent;
+}
+
+/* Estilo adicional para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .izquierda {
+        width: 100%;
+    }
+
+    .DatosPersonales {
+        margin-left: 0;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .subcolumna {
+        margin-right: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .perfil {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .progressBar {
+        height: 10px;
+    }
+
+    .progress {
+        height: 10px;
+    }
+
+    h1, h2, #carrera, .icono {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    .izquierda, .DatosPersonales {
+        padding: 3%;
+    }
+
+    /* Ajusta otros estilos según sea necesario */
+}

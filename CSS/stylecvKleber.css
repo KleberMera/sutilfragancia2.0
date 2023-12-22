@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: #800080;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.principal {
+    color: #000000;
+}
+
+h1 {
+    color: #4c9dd4;
+}
+
+.logo-container {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.logo, .logo_1 {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover, .logo_1:hover {
+    transform: scale(1.1);
+}
+
+.circulo {
+    font-size: 100px;
+}
+
+.logo-container_1 {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+}
+
+.icono {
+    color: #ffffff;
+    font-size: 100px;
+}
+
+.iconoig {
+    font-size: 100px;
+}
+
+section {
+    margin-bottom: 30px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    border-radius: 10px;
+}
+
+section:hover {
+    background-color: #800080;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.info-section ul,
+.education-section ul,
+.experience-section ul,
+.skills-section ul,
+.references-section ul {
+    padding-left: 20px;
+}
+
+.skills-section ul {
+    font-weight: bold;
+}
+
+.skills-section li {
+    margin-bottom: 5px;
+}
+
+.references-section li {
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icono, .iconoig {
+    margin: 0 5px;
+    color: #fff;
+}
+
+.icono:hover, .iconoig:hover {
+    color: #3498db;
+}
