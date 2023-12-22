@@ -131,3 +131,20 @@ footer {
 .icono:hover, .iconoig:hover {
     color: #3498db;
 }
+
+/* Agrega este estilo al final de tu archivo de estilo CSS */
+
+.btn-volver {
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    background-color: #848484;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-volver:hover {
+    background-color: #000000;
+}

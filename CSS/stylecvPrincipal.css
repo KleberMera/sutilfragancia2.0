@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-size: 20px;
-    
+
 }
 
 header {
@@ -22,11 +22,13 @@ header {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    width: 250px; /* Puedes ajustar este valor según tus necesidades */
+    width: 250px;
+    /* Puedes ajustar este valor según tus necesidades */
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-direction: row; /* Cambiado a fila */
+    flex-direction: row;
+    /* Cambiado a fila */
 }
 
 
@@ -52,14 +54,15 @@ header {
 
 
 
-.container:hover{
+.container:hover {
     background-color: #800080;
+
     .btn-dark {
         background-color: #000000;
         color: #ffffff;
         border: 1px solid #800080;
     }
-    
+
 }
 
 footer {
@@ -73,12 +76,15 @@ footer {
 
 .integrante-container {
     display: flex;
-    flex-direction: column; /* Cambiado a columna */
+    flex-direction: column;
+    /* Cambiado a columna */
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px; /* Ajusta según sea necesario */
+    margin-bottom: 20px;
+    /* Ajusta según sea necesario */
     text-align: center;
 }
+
 .integrante-content {
     display: flex;
     flex-direction: column;
@@ -90,8 +96,31 @@ footer {
 }
 
 .integrante-image {
-    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 200px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 200px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
     object-fit: cover;
     border-radius: 50%;
 }
+
+
+/* ... (tu estilo actual) ... */
+
+/* Estilo del botón Volver a la Página Principal */
+.btn-volver {
+    margin-right: 20px;
+    /* Ajusta según sea necesario */
+    padding: 10px;
+    background-color: #61696f;
+    /* Azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-volver:hover {
+    background-color: #800080;
+}
+
+/* ... (tu estilo actual) ... */

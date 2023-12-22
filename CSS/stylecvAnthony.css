@@ -140,3 +140,20 @@ table {
 
     /* Ajusta otros estilos según sea necesario */
 }
+
+
+/* Estilo del botón Volver al Inicio */
+.btn-volver {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #080b0d; /* Azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-volver:hover {
+    background-color: #800080; /* Púrpura */
+}
